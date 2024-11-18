@@ -1,23 +1,10 @@
-import ImagePicker from '@/components/meals/image-picker';
-import classes from './page.module.css';
+"use client";
+
+import ImagePicker from "@/components/meals/image-picker";
+import classes from "./page.module.css";
+import { shareMeal } from "@/lib/actions";
 
 export default function ShareMealPage() {
-async function shareMeal(formData) {
-  'use server'; //this creates a so-called Server Action, which is a function that's guaranteed to execute on the server, and only there.
-
-  const meal = {
-    title: formData.get('title'),
-    summary : formData.get('summary'),
-    instructions : formData.get('instructions'),
-    image : formData.get('image'),
-    creator : formData.get('name'),
-    creator_email : formData.get('email'),
-  }
-
-  
-}
-
-
   return (
     <>
       <header className={classes.header}>
@@ -55,7 +42,7 @@ async function shareMeal(formData) {
               required
             ></textarea>
           </p>
-         <ImagePicker label="Your image" name="image" />
+          <ImagePicker label="Your image" name="image" />
           <p className={classes.actions}>
             <button type="submit">Share Meal</button>
           </p>
