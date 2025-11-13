@@ -11,7 +11,7 @@ export const metadata = {
   description: "Browse the delicious meals shared by our vibrant community.",
 };
 
-
+// The component that will fetch the Data
 async function Meals() {
   const meals = await getMeals();
 

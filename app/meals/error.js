@@ -8,3 +8,6 @@ export default function Error() {
     </main>
   );
 }
+
+
+//error.js must be a client

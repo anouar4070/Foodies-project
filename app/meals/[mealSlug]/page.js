@@ -26,6 +26,7 @@ export default function MealDetailsPage({ params }) {
     notFound();
   }
 
+  //adding line breaks
   meal.instructions = meal.instructions.replace(/\n/g, "<br />");
 
   return (
