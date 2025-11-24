@@ -70,4 +70,4 @@ const safeInput = xss(userInput);
 
 ## 📄 License
 
-Feel frr to clone or modify this project.
+Feel free to clone or modify this project.
